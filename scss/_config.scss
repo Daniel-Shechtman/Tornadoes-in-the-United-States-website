@@ -1,0 +1,272 @@
+// Variables
+$light-color: #f3f3f3;
+$dark-color: #333;
+$main-color: coral;
+$max-width: 1400px;
+$bg-image: url("../dist/img/showcase.jpg");
+
+// Styling entire project
+.container {
+  max-width: $max-width;
+  margin: auto;
+  padding: 1rem 2rem;
+  overflow: hidden;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.ma {
+  &-1 {
+    margin: 1rem 0;
+  }
+
+  &-2 {
+    margin: 2rem 0;
+  }
+
+  &-3 {
+    margin: 3rem 0;
+  }
+
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.bg {
+  &-light {
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    background: $dark-color;
+    color: $light-color;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.text {
+  &-title {
+    font-size: 3.5rem;
+    font-weight: 200;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}
+
+.lead {
+  line-height: 1.6;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.bottom-line {
+  height: 5px;
+  width: 4rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.card {
+  padding: 0.5rem 1rem;
+  box-shadow: 5px 5px 5px $main-color;
+}
+
+%shared-round-icon {
+  position: relative;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  margin: 0 auto;
+  transition: all 1s ease-in-out;
+}
+
+.round-icon {
+  &-dark {
+    @extend %shared-round-icon;
+    background: $dark-color;
+    color: $light-color;
+
+    &:hover {
+      background: $main-color;
+      transform: scale(1.3);
+
+      & .step {
+        background: $dark-color;
+      }
+    }
+
+    & .step {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.5rem;
+      background: $main-color;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      transition: all 1s ease-in-out;
+    }
+  }
+  &-light {
+    @extend %shared-round-icon;
+    background: $light-color;
+
+    & i {
+      color: $dark-color;
+    }
+    &:hover {
+      background: $main-color;
+      transform: scale(1.3);
+
+      & .step {
+        background: $light-color;
+        color: $dark-color;
+      }
+    }
+
+    & .step {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.5rem;
+      background: $main-color;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      transition: all 1s ease-in-out;
+    }
+  }
+}
+
+%shared-btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem 0.8rem;
+  transition: all 1s ease-in-out;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+.btn {
+  &-main {
+    @extend %shared-btn;
+    background-color: $main-color;
+    color: $dark-color;
+    & i {
+      color: $dark-color;
+    }
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &-light {
+    @extend %shared-btn;
+    background-color: $light-color;
+    color: $dark-color;
+    & .fab {
+      color: $dark-color;
+    }
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &-dark {
+    @extend %shared-btn;
+    background-color: $dark-color;
+    color: $light-color;
+    & .fab {
+      color: $light-color;
+    }
+
+    &:hover {
+      background: $main-color;
+      color: $dark-color;
+    }
+  }
+}
+
+.social {
+  &-dark a i {
+    color: $dark-color !important;
+    transition: color 0.6s ease-in-out;
+    &:hover {
+      color: $main-color !important;
+    }
+  }
+
+  &-light i {
+    color: $light-color;
+    transition: color 0.6s ease-in-out;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+.step-padding {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.link-border {
+  color: inherit;
+  border-bottom: 1px $main-color solid;
+  transition: color 1s ease-in-out;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.page-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.middle-line-h {
+  height: 100%;
+  background-color: $main-color;
+  width: 3px;
+  display: block;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.middle-line-w {
+  width: 100%;
+  height: 5px;
+  background-color: $main-color;
+  display: block;
+  margin: auto 0;
+}

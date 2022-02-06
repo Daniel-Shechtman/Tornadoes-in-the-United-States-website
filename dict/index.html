@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b5841c615.js"
+        crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Tornadoes In The USA</title>
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div id="section-a" class="text-center">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+                <div id="header-content" class="text-center">
+                    <h1 class="text-title">Tornadoes In The USA</h1>
+                    <div class="bottom-line"></div>
+                    <h3>Predicting the severity of the 
+                        next Tornado in the United States
+                        </h3>
+                    <p class="lead">In this project we wanted to test whether we can predict the intensity of the next tornado in the United States according to a number of different parameters (year, length, width, number of wounded, number of deaths, property damage).
+                        We found a number of very interesting things about the causes of tornado strength.
+                        There are explanations of each step and on the last page it is possible to ask questions about the project.</p>
+                </div>
+                <h1 class="text-title">Stages of work</h1>
+                <div class="bottom-line"></div>
+                <div id="header-timeline" class="py-1 text-center">
+                    <div>
+                        <div class="round-icon-dark">
+                          <i class="fas fa-search fa-2x">
+                              <div class="step">1</div>
+                          </i>  
+                        </div>
+                        <h2>Data
+                            Acquisition
+                            </h2>
+                        <p>Crawling and scraping data using selenium. <br>
+                             It took us 14 hours to gather 650,000 pieces of information.
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                          <i class="fas fa-broom fa-2x">
+                              <div class="step">2</div>
+                          </i>  
+                        </div>
+                        <h2>Clearing the data</h2>
+                        <p>Clear the information so that machine learning will provide as accurate a result as possible.
+                        </p>
+                    </div>
+                    <div >
+                        <div>
+                          <i class="fas fa-chart-pie fa-2x">
+                              <div class="step">3</div>
+                          </i>  
+                        </div>
+                        <h2>investigating the data</h2>
+                        <p>Study the graphs to learn about what affects the strength of a tornado and try to find common ground between each tornado and its strength.
+                        </p>
+                    </div>
+                    <div >
+                        <div>
+                          <i class="fas fa-robot fa-2x">
+                              <div class="step">4
+                              </div>
+                          </i>  
+                        </div>
+                        <h2>Machine learning</h2>
+                        <p>Machine learning so we can predict the intensity of the next tornado in the United States by the information we have gathered.
+                        </p>
+                    </div>
+                </div>
+                <a href="#section-b" class="btn-light py-3">Next Page <i class="fas fa-arrow-down"></i></a>
+
+        </div>
+    </div>
+
+    <!--Section B: Explain About Tornadoes -->
+    <div id="section-b" class="text-center bg-light">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons" class="social-dark">
+                    <a
+                    href="https://github.com/dsisback/Final-project-in-data-science-tornadoes"
+                    target="_blank"><i class="fab fa-github fa-2x "></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/"
+                    target="_blank"><i  class="fab fa-linkedin fa-2x "></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x "></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x "></i></a>
+                </div>
+            </div>
+            <h1 class="text-title">
+                What Is Fujita Scale?
+            </h1>
+            <div class="bottom-line"></div>
+            <h2 class="py-1">Let's Dive In Into The Explanation</h2>
+            <div class="fujita-explain py-3 card bg-dark">
+                <p class="lead ma-1">The Fujita scale is a scale for rating tornado
+                intensity, based primarily on the damage tornadoes inflict on
+                human-built structures and vegetation.
+                <br>
+                The official Fujita scale category is determined by meteorologists and engineers after a ground or aerial damage survey, or both; and depending
+                on the circumstances, ground-swirl patterns (cycloidal marks),
+                weather radar data, witness testimonies, media reports and
+                damage imagery.
+                <br>
+                You can read more at <a
+                href="https://en.wikipedia.org/wiki/Fujita_scale"
+                target="_blank" class="link-border
+                ">Wikipedia</a>
+                </p>
+                <img src="./img/fujita.png" alt="fujita scale" class="ma-2">
+            </div>
+            <div class="page-selector">
+                <a href="#section-a" class="btn-dark"><i class="fas fa-arrow-up"></i> Previous Page</a>
+                <a href="#section-c" class="btn-dark">Next Page <i class="fas fa-arrow-down"></i></a>
+    
+            </div>
+        </div>
+    </div>
+    <!-- Section C: Data aqusetion -->
+    <div id="section-c" class="text-center bg-dark">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-title">
+                    First Step : Data Acquisition                
+                </h1>
+                <div class="round-icon-light">
+                    <i class="fas fa-search fa-2x">
+                        <div class="step">1</div>
+                    </i>  
+                  </div>
+            </div>
+            <div class="bottom-line"></div>
+            <h2 class="py-1">Let's see how we managed to get the data</h2>
+            <div class="aqu-explain py-1 card bg-light">
+                <p class="lead ma-1"><i class="fas fa-dot-circle"></i> We
+                gathered the information using Selenium
+                ( Selenium is an open-source tool that automates web browsers. It
+                provides a single interface that lets you write test scripts in
+                programming languages, to run tests both locally and on remote
+                devices )
+                <br>
+                <i class="fas fa-dot-circle"></i> We understood that we want a big dataframe and that each row will represents a Tornado storm. that way, it would be easy for the machine to learn about each storm’s behavior and to predict it’s severity.
+                <br>
+                <i class="fas fa-dot-circle"></i> We added all the states together and created another column called "State".
+                <br>
+                <i class="fas fa-dot-circle"></i> We were able to obtain over
+                650,000 diffrent data
+                <br>
+                <i class="fas fa-dot-circle"></i> Most of the data was collected
+                from this <a
+                href="https://data.elpasotimes.com/tornado-archive/"
+                class="link-border" target="_blank"> site</a>
+                </p>
+                <img src="./img/beforeCleaning.png" alt="fujita scale" class="ma-1">
+            </div>
+            <div class="page-selector">
+                <a href="#section-b" class="btn-light"><i class="fas fa-arrow-up"></i> Previous Page</a>
+                <a href="#section-d" class="btn-light">Next Page <i class="fas fa-arrow-down"></i></a>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- Section D: Data Cleaning -->
+    <div id="section-d" class="text-center bg-light">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons" class="social-dark">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-title" style="display: inline-block;">
+                    Second Step : Data Cleaning                
+                </h1>
+                <div class="round-icon-dark step-padding">
+                    <i class="fas fa-broom fa-2x">
+                        <div class="step">2</div>
+                    </i>  
+                  </div>
+            </div>
+            <div class="bottom-line"></div>
+            <h2 class="py-1">Let's see how we managed to clean the data</h2>
+            <div class="cleaning-explain py-1 card bg-dark">
+                <div>
+                    <img src="./img/cleaning_stage.png" alt="cleaning">
+                    <p class="lead">
+                        After creating the data frame we noticed information
+                        missing in some numeric  columns, we decided to delete
+                        these rows completely, also duplicated rows were
+                        deleted.
+                        <br>
+                        We decided with to unify the F Scale attribute from 6 to
+                        3 categories to optimize the results of machine learning.
+                    </p>
+                </div>
+                <div class="middle-line"></div>
+                <div>
+                    <div>
+                        <h2 class="link-border">Before Cleaning</h2>
+                        <img src="./img/cleaning_stage4.png">
+                        <h2 class="link-border">After Cleaning</h2>
+                        <img src="./img/cleaning_stage5.png" alt="cleaning">
+                    </div>
+                    <div>
+                        <p class="lead">
+                            After removing all the rows with missing information we beautified the data in the data frame.
+                            <br>
+                            EF was removed from F Scale column.
+                            <br>
+                            Injury and fatality columns - brackets were removed.
+                            <br>
+                            property damage - coma removed ($) also removed and converted to int.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="page-selector">
+                <a href="#section-c" class="btn-dark"><i class="fas fa-arrow-up"></i> Previous Page</a>
+                <a href="#section-e1" class="btn-dark">Next Page <i class="fas
+                fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section E1: Visualisations-->
+    <div id="section-e1" class="text-center bg-dark">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons" class="social-light">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-title" style="display: inline-block;">
+                    Third Step : Visualisations               
+                </h1>
+                <div class="round-icon-light step-padding">
+                    <i class="fas fa-chart-pie fa-2x">
+                        <div class="step">3</div>
+                    </i>  
+                </div>
+            </div>
+            <div class="bottom-line"></div>
+            <div class="vis-explain py-1 card bg-light">
+                <div>
+                    <img src="./img/chart1.png" alt="vis">
+                    <p class="lead">
+                        In the following pie chart,
+                        we take a look at the division between the three categories
+                        we decided to explore during 
+                        this project regarding the 
+                        severity of a Tornado storm.
+                    </p>
+                </div>
+                <div class="middle-line-h"></div>
+                <div>
+                    <img src="./img/chart2.png" alt="vis">
+                    <p class="lead">
+                        In the following graph we see the states on the X axis
+                        sorted from southern to northern states. The Y axis
+                        represents number of tornadoes.
+                        As we can see in general that the south states in the US will be subjected to more tornadoes than their northern states
+
+                    </p>
+                </div>
+            </div>
+            <div class="page-selector">
+                <a href="#section-d" class="btn-light"><i class="fas fa-arrow-up"></i> Previous Page</a>
+                <a href="#section-e2" class="btn-light">Next Page <i class="fas
+                fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section E2: Visualisations -->
+    <div id="section-e2" class="text-center bg-light">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons" class="social-dark">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="vis-explain py-1 card bg-dark">
+                <div>
+                    <img src="./img/chart3.png" alt="vis">
+                    <p class="lead">
+                        in this graph we sorted the states from south to north and added the fatalities and injuries to one number. 
+                    </p>
+                </div>
+                <div class="middle-line-h"></div>
+                <div>
+                    <img src="./img/chart4.png" alt="vis">
+                    <p class="lead">
+                        as we can see, the southern states have more fatalities 
+                        and injuries then the 
+                        northern states.
+                    </p>
+                </div>
+            </div>
+            <div class="page-selector">
+                <a href="#section-e1" class="btn-dark"><i class="fas fa-arrow-up"></i> Previous Page</a>
+                <a href="#section-f1" class="btn-dark">Next Page <i class="fas
+                fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section F1: Machine Learning -->
+    <div id="section-f1" class="text-center bg-dark">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons" class="social-light">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-title" style="display: inline-block;">
+                    Fourth Step : Machine Learning               
+                </h1>
+                <div class="round-icon-light step-padding">
+                    <i class="fas fa-robot fa-2x">
+                        <div class="step">4</div>
+                    </i>  
+                </div>
+            </div>
+            <div class="bottom-line"></div>
+            <div class="ml-explain py-1 card bg-light">
+                <p class="lead">
+                    Our label is “F Scale” column, because our research question
+                    refer to if a Tornado is moderate significant or devastating
+                    . We chose to apply Logistic Regression – Supervised
+                    Learning for classification problems – categorical label.
+                    <br>
+                    Before the feature engineering stage, we got accuracy of 75%~. Our final model accuracy is 78~%.
+                </p>
+                <div class="middle-line-w"></div>
+                <img src="./img/ml1.png" alt="machine learning">
+            </div>
+            <div class="page-selector">
+                <a href="#section-e2" class="btn-light"><i class="fas fa-arrow-up"></i> Previous Page</a>
+                <a href="#section-f2" class="btn-light">Next Page <i class="fas
+                fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section F2: Machine Learning -->
+    <div id="section-f2" class="text-center bg-light">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons" class="social-dark">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-title" style="display: inline-block;">
+                    Bonus: Machine Learning               
+                </h1>
+            </div>
+            <div class="bottom-line"></div>
+            <div class="ml-explain py-1 card bg-dark">
+                <p class="lead">
+                    Another ML model we built that was based on logistic regression was this: With two inputs from the user regarding width and length of a tornado, the model can provide results of probability of each severity category.
+                </p>
+                <div class="middle-line-w"></div>
+                <div>
+                    <img src="./img/ml2.png" alt="machine learning">
+                    <img src="./img/ml3.png" alt="machine learning">
+                </div>
+            </div>
+            <div class="page-selector">
+                <a href="#section-f1" class="btn-dark"><i class="fas fa-arrow-up"></i> Previous Page</a>
+                <a href="#section-g" class="btn-dark">Next Page <i class="fas
+                fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section G:Form for qusetions -->
+    <div id="section-g" class="text-center bg-dark">
+        <div class="container">
+            <div id="header-main">
+                <img class="header-logo" src="./img/logo.png" alt="tornado logo">
+                <div id="header-icons" class="social-light">
+                    <a href="https://github.com/dsisback/Final-project-in-data-science-tornadoes" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-shechtman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-title" style="display: inline-block;">
+                    Any questions?               
+                </h1>
+            </div>
+            <div class="bottom-line"></div>
+            <h2>Feel free to ask questions and let us know what you thought of this project</h2>
+            <form class="py-1 card bg-light" method="POST" data-netlify="true">
+                <input type="text" name="email" placeholder="Enter Name">
+                <input name="email" type="email" placeholder="Enter Email">
+                <textarea name="message" id="message" placeholder="Your Message Here"></textarea>
+                
+                <button class="btn-dark">Submit</button>
+            </form>
+            <div class="page-selector">
+                <a href="#section-f2" class="btn-light"><i class="fas fa-arrow-up"></i> Previous Page</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
